@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Navigator Object </TITLE>
+<script>
+function ShowDetails()
+{
+	document.getElementById("family").innerHTML=navigator.appName;
+	document.getElementById("language").innerHTML=navigator.language;
+	document.getElementById("cookies").innerHTML=navigator.cookieEnabled;
+}
+</script>
+</HEAD>
+
+<BODY>
+<div align="center">
+<form>
+<input type="button" value="Get Browser Details " onclick="ShowDetails()">
+<dl>
+	<dt>Browser Family</dt>
+	<dd id="family"></dd>
+</dl>
+<dl>
+	<dt>Browser Language</dt>
+	<dd id="language"></dd>
+</dl>
+<dl>
+	<dt>Cookies Enabled</dt>
+	<dd id="cookies"></dd>
+</dl>
+</form>
+</div>
+</BODY>
+</HTML>
